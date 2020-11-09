@@ -1,0 +1,407 @@
+// partial imports
+@import "partials/normalize";
+@import "partials/main";
+// variables imports
+@import "partials/variables";
+// mixins imports
+@import "partials/mixins";
+
+body {
+  .wrapper {
+    width: 90%;
+    margin: $margin-middle;
+
+    @media screen and (max-width: 320px) {
+      min-width: 320px;
+    }
+
+    .main-navigation {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 80px;
+
+      font-size: x-large;
+
+      .food,
+      .mail {
+        text-transform: capitalize;
+      }
+    }
+
+    .food-items {
+      max-width: $food-section--width;
+      display: grid;
+      grid-template-rows: repeat(14, 100px);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px 15px;
+      grid-auto-flow: row;
+      grid-auto-rows: 100px;
+      justify-content: space-around;
+      margin: $margin-middle;
+
+      &__image--one {
+        grid-row: 1 / 5;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+      &__image--two {
+        grid-row: 1 / 5;
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--three {
+        grid-row: 1 / 5;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--four {
+        grid-row: 1 / 5;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--five {
+        grid-row: 8 / 12;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--six {
+        grid-row: 8 / 12;
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--seven {
+        grid-row: 8 / 12;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__image--eight {
+        grid-row: 8 / 12;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title {
+        font-size: 1.5 * $base--size;
+        text-align: center;
+      }
+
+      &__title--one {
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--two {
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--three {
+        grid-row: 5 / 6;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--four {
+        grid-row: 5 / 6;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--five {
+        grid-row: 12 / 13;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--six {
+        grid-row: 12 / 13;
+        grid-column: 2 /3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--seven {
+        grid-row: 12 / 13;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__title--eight {
+        grid-row: 12 / 13;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description {
+        font-size: 1.2 * $base--size;
+        text-align: center;
+      }
+
+      &__description--one {
+        grid-row: 6 / 8;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--two {
+        grid-row: 6 / 8;
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--three {
+        grid-row: 6 / 8;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--four {
+        grid-row: 6 / 8;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--five {
+        grid-row: 13 / 15;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--six {
+        grid-row: 13 / 15;
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--seven {
+        grid-row: 13 / 15;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+
+      &__description--eight {
+        grid-row: 13 / 15;
+        grid-column: 4 / 5;
+        width: 100%;
+        height: 100%;
+        max-height: $fill-parent;
+        min-height: $fill-parent;
+        max-width: $fill-parent;
+        min-width: $fill-parent;
+      }
+    }
+    // miscelleneous ( library classes overrides )
+    .page-link {
+      border: none;
+      color: black;
+    }
+    .page-item.active .page-link,
+    .page-item.active .page-link:focus,
+    .page-item.active .page-link:hover {
+      background-color: #000;
+    }
+
+    // position about section in the middle of the template page inside wrapper div
+    .about-section {
+      margin: auto;
+      max-width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &__title {
+        text-transform: capitalize;
+      }
+
+      //   owners image dimensions
+      &__owner-image {
+        width: 500px;
+        height: 400px;
+      }
+
+      &__owner-description--details {
+        width: 80%;
+      }
+      // make words uppercase where they are as in the template
+      .word--uppercase {
+        text-transform: capitalize;
+      }
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 80px);
+      gap: 15px;
+      margin: $margin-middle;
+
+      width: 98%;
+      height: calc(300px + 100px);
+
+      h2 {
+        text-transform: uppercase;
+        font-size: x-large;
+      }
+
+      &-copyright {
+        grid-row: 2 / 5;
+        grid-column: 1;
+      }
+
+      &-blogposts {
+        grid-row: 2 / 5;
+        grid-column: 2;
+
+        .media {
+          display: table;
+        }
+      }
+
+      &-popularblogs {
+        grid-row: 2 / 5;
+        grid-column: 3;
+        display: flex;
+        flex-direction: column;
+
+        .tags {
+          margin-top: 1rem;
+
+          .tags__item {
+            background-color: #555;
+            padding: 3px 8px;
+            color: #fff;
+          }
+          & > small:nth-child(1) {
+            background-color: #000;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

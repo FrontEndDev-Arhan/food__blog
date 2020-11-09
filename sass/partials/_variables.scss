@@ -1,0 +1,39 @@
+// variables
+
+// === sizes ===
+$content--width: 90%;
+$max-content--width: 1300px;
+$content--height: auto;
+$max-content--height: 4000px;
+$header-height: 200px;
+$footer--height: 500px;
+$base--size: 16px;
+$min-image--width: 200px;
+$max-image--width: 300px;
+$food-section--width: 1280px;
+$fill-parent: 100%;
+
+// === miscelleneous ===
+$header--background: red;
+$heading--width: auto;
+$margin-middle: 0 auto;
+$according-to-content: min-content;
+$as-much-content: max-content;
+
+// === fonts ===
+$text-font: arial;
+$headline-font: georgia;
+
+// === colors ===
+$text-color: #333;
+$theme-color: blue;
+$secondary-color: #abc;
+$ternary-color: green;
+$link-color: darken(lightyellow, 50%);
+$menu__item--color: white;
+
+// === borders ===
+$border--outermost: 1px solid black;
+$border--inner-last: 1px solid red;
+$border--inner-secondlast: 1px solid royalblue;
+$border--inner-thirdlast: 1px solid green;
