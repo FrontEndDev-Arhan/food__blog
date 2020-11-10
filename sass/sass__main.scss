@@ -1,17 +1,23 @@
-// partial imports
+// import vendors partials
 @import "partials/normalize";
 @import "partials/main";
-// variables imports
+
+// import bourbon sass framework
+@import "../assets/bourbon/core/bourbon";
+// import breakpoint sass framework
+@import "../assets/breakpoint-sass/stylesheets/breakpoint";
+// import variables
 @import "partials/variables";
-// mixins imports
+// import mixins
 @import "partials/mixins";
 
 body {
   .wrapper {
     width: 90%;
     margin: $margin-middle;
+    font-family: $font-stack-verdana;
 
-    @media screen and (max-width: 320px) {
+    @include breakpoint(max-width 320px) {
       min-width: 320px;
     }
 
@@ -131,6 +137,7 @@ body {
       &__title {
         font-size: 1.5 * $base--size;
         text-align: center;
+        margin-top: 20px;
       }
 
       &__title--one {
@@ -314,6 +321,300 @@ body {
         min-width: $fill-parent;
       }
     }
+
+    @include breakpoint(1px 850px) {
+      .food-items {
+        max-width: $food-section--width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(28, 100px);
+        grid-gap: 10px 15px;
+        grid-auto-flow: row;
+        grid-auto-rows: 100px;
+        justify-content: space-around;
+        margin: $margin-middle;
+
+        &__image--one {
+          grid-row: 1 / 5;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+        &__image--two {
+          grid-row: 1 / 5;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--three {
+          grid-row: 8 / 12;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--four {
+          grid-row: 8 / 12;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--five {
+          grid-row: 15 / 19;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--six {
+          grid-row: 15 / 19;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--seven {
+          grid-row: 22 / 26;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__image--eight {
+          grid-row: 22 / 26;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title {
+          font-size: 1.5 * $base--size;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        &__title--one {
+          grid-row: 5 / 6;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--two {
+          grid-row: 5 / 6;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--three {
+          grid-row: 12 / 13;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--four {
+          grid-row: 12 / 13;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--five {
+          grid-row: 19 / 20;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--six {
+          grid-row: 19 / 20;
+          grid-column: 2 /3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--seven {
+          grid-row: 26 / 27;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__title--eight {
+          grid-row: 26 / 27;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description {
+          font-size: 1.2 * $base--size;
+          text-align: center;
+        }
+
+        &__description--one {
+          grid-row: 6 / 8;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--two {
+          grid-row: 6 / 8;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--three {
+          grid-row: 13 / 15;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--four {
+          grid-row: 13 / 15;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--five {
+          grid-row: 20 / 22;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--six {
+          grid-row: 20 / 22;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--seven {
+          grid-row: 27 / 29;
+          grid-column: 1 / 2;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+
+        &__description--eight {
+          grid-row: 27 / 29;
+          grid-column: 2 / 3;
+          width: 100%;
+          height: 100%;
+          max-height: $fill-parent;
+          min-height: $fill-parent;
+          max-width: $fill-parent;
+          min-width: $fill-parent;
+        }
+      }
+    }
+    // navigation alignment
+    .pagination {
+      @include breakpoint(1px 650px) {
+        margin-left: 30% !important;
+      }
+    }
     // miscelleneous ( library classes overrides )
     .page-link {
       border: none;
@@ -329,7 +630,7 @@ body {
     .about-section {
       margin: auto;
       max-width: 100%;
-      height: 700px;
+      min-height: 700px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -341,10 +642,18 @@ body {
 
       //   owners image dimensions
       &__owner-image {
-        width: 500px;
-        height: 400px;
-      }
+        max-width: 500px;
+        max-height: 400px;
 
+        @include breakpoint(1px 650px) {
+          @include margin(30px null null null);
+        }
+      }
+      &__owner-description {
+        @include breakpoint(1px 650px) {
+          @include margin(30px null null null);
+        }
+      }
       &__owner-description--details {
         width: 80%;
       }
@@ -399,6 +708,63 @@ body {
           & > small:nth-child(1) {
             background-color: #000;
             font-size: 1rem;
+          }
+        }
+      }
+    }
+    @include breakpoint(1px 850px) {
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 80px) 30px repeat(2, 80px) 30px repeat(
+            2,
+            80px
+          );
+        gap: 15px;
+        margin: $margin-middle;
+
+        width: 98%;
+        height: calc(300px + 400px);
+        text-align: center;
+
+        h2 {
+          text-transform: uppercase;
+          font-size: x-large;
+        }
+
+        &-copyright {
+          grid-row: 1 / 3;
+          grid-column: 1;
+        }
+
+        &-blogposts {
+          grid-row: 4 / 6;
+          grid-column: 1;
+
+          .media {
+            display: table;
+            text-align: left;
+          }
+        }
+
+        &-popularblogs {
+          grid-row: 7 / 9;
+          grid-column: 1;
+          display: flex;
+          flex-direction: column;
+
+          .tags {
+            margin-top: 1rem;
+
+            .tags__item {
+              background-color: #555;
+              padding: 3px 8px;
+              color: #fff;
+            }
+            & > small:nth-child(1) {
+              background-color: #000;
+              font-size: 1rem;
+            }
           }
         }
       }

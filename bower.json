@@ -1,0 +1,29 @@
+{
+  "name": "css_grid",
+  "description": "power of sass mixins and css grid",
+  "main": "index.js",
+  "authors": [
+    "Successful Businessman"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "['sass'",
+    "'eslint'",
+    "'prettier'",
+    "'vscode'",
+    "'flexbox'",
+    "'css",
+    "grid'",
+    "'git'",
+    "'github']"
+  ],
+  "homepage": "https://github.com/FrontEndDev-Arhan/food__blog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "c:/users/arhan/desktop/css_grid/root/assets/",
+    "test",
+    "tests"
+  ]
+}
